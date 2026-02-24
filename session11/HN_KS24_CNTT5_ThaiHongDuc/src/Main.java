@@ -6,7 +6,8 @@ public class Main {
         drinks[0] = new Coffee(1, "Bạc sỉu", 30000, true);
         drinks[1] = new FruitJuice(2, "Nước cam", 40000, 10);
         drinks[2] = null;
-        for (Drink d : drinks){
+        for (int i = 0; i < drinks.length; i++) {
+            Drink d = drinks[i];
             if (d != null){
                 d.displayInfo();
                 if(d instanceof IMixable){
